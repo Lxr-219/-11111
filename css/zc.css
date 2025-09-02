@@ -1,0 +1,222 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Courier New", monospace;
+   /*  monospace 字体更贴近科技感 */
+ }
+
+ body {
+  padding-top:1rem;
+   background: #0b0b0b !important;
+ }
+
+ body-1 {
+  
+   /* position: relative; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: #0b0b0b;
+   /* 深灰背景 */
+   color: #fff;
+
+ }
+
+ /* 主容器：模拟外框科技
+ 感 */
+ .cyber-container {
+
+   left: 50%;
+   /* top: 50%; */
+   transform: translate(-50%,0);
+   position: relative;
+   position: absolute;
+   width: 95%;
+   /* height: 50rem; */
+   background: #000205;
+   border: 2px solid #5ca671;
+   /* 基础描边 */
+   border-radius: 20px;
+   box-shadow: 0 0 30px rgba(0, 255, 0, 0.3),
+     inset 0 0 10px rgba(0, 255, 0, 0.2);
+   /* 内外发光 */
+   /* overflow: auto; */
+   color: #fff;
+ }
+
+ /* 外框霓虹线条（可叠加多层 ::before/::after 丰富细节） */
+ .cyber-container::before {
+   content: "";
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   /* border: 2px dashed #0f0; */
+   border-radius: 20px;
+   pointer-events: none;
+   /* 避免遮挡点击 */
+   animation: glowBorder 3s infinite alternate;
+ }
+
+ @keyframes glowBorder {
+   0% {
+     opacity: 0.6;
+   }
+
+   100% {
+     opacity: 1;
+     box-shadow: 0 0 40px rgba(0, 255, 0, 0.6);
+   }
+ }
+
+ /* 标题区域 */
+ .cyber-header {
+   text-align: center;
+   padding: 1.6rem 0;
+ }
+
+ .cyber-header .logo {
+   font-size: 2em;
+   color: #0f0;
+   margin-bottom: 10px;
+   text-shadow: 0 0 10px #0f0;
+ }
+
+ .cyber-header .sub-title {
+   font-size: 1em;
+   color: #0f0;
+   opacity: 0.8;
+ }
+
+ /* 表单区域 */
+ .cyber-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   padding: 0 20px;
+ }
+
+ .cyber-form label {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+ }
+
+ .cyber-form input {
+  display: inline-block;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 8px;
+   background: #111;
+   color: #0f0;
+   font-size: 0.9em;
+   outline: none;
+   transition: box-shadow 0.3s;
+ }
+
+ .cyber-form input:focus {
+   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+ }
+  .nj {
+    display: inline-block;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 8px;
+   background: #111;
+   color: #0f0;
+   font-size: 0.9em;
+   outline: none;
+   transition: box-shadow 0.3s;
+  }
+  
+  .yx{
+    position: relative;
+  }
+  .yx input{
+    width:70%;
+   
+  }
+  .hq{
+    
+     position: absolute;
+     top: 50%;
+     transform: translate(0,-8%);
+     right: 0.9rem; 
+     background-color:#111111;
+     color: #fff;
+     padding: .1067rem .2667rem;
+     border: 1px #fff solid;
+     border-radius: .2667rem;
+  }
+   .hq:hover {
+   transform: scale(1.05);
+   
+ }
+ .yq{
+  font-size: 0.8rem;
+  color:#0f0;
+  /* text-align: center; */
+  height: 1.0667rem;
+  line-height: 1.0667rem;
+ }
+ .yq svg{
+  margin-top: .08rem;
+ }
+
+ /* 按钮 */
+ .cyber-btn {
+   margin-top: 1.6rem;
+   padding: .5333rem .8rem;
+   border: none;
+   border-radius: 20px;
+   background: #0f0;
+   color: #000;
+   font-weight: bold;
+   cursor: pointer;
+   transition: transform 0.2s, box-shadow 0.3s;
+ }
+
+ .cyber-btn:hover {
+   transform: scale(1.05);
+   box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+ }
+
+ /* 底部小字（可自定义动画） */
+ .cyber-footer {
+   text-align: center;
+   margin-top: 1rem;
+   color: #0f0;
+   opacity: 0.6;
+   font-size: 1em;
+ }
+ .fh{
+   color: #0f0;
+  text-decoration: none;
+  float: right;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
+ }
+ 
+    /* 提示框 */
+    /* 提示框 */
+    .alert {
+      width: 100%;
+      position: fixed;
+      top:10px;
+      left: 50%;
+      transform:translate(-50%,0);
+      display: none;
+      transition: opacity 0.3s ease-in-out;
+      /* background-color: red !important; */
+    }
+  
+    .show {
+      display: block !important;
+    }
+    

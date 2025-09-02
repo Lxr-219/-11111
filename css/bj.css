@@ -1,0 +1,41 @@
+/* 目标容器：限制范围，让 canvas 仅填充这里 */
+.effect-container {
+  position: relative;
+  /* 为子元素 absolute 做参考 */
+  width: 100%;
+  /* 假设区域宽度，可自定义 */
+  height: 22.6667rem;
+  /* 自定义高度 */
+  margin: 0 auto;
+  /* 居中示例 */
+  overflow: hidden;
+  /* 防止字符溢出容器 */
+}
+
+/* canvas 仅覆盖 .effect-container */
+#backgroundCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* 背景层 */
+}
+
+/* 区域内内容：需盖在 canvas 上层
+.effect-container .content {
+  position: relative;
+  z-index: 1;
+  /* 确保内容不被 canvas 遮挡 */
+  /* color: #fff; */
+  /* 文字颜色 */
+  /* padding: 20px; */
+/* } */
+
+/* 原有小组信息样式（可保留） */
+/* .group-info {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}  */

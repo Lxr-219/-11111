@@ -1,0 +1,129 @@
+.dh{
+  right: 4rem;
+  position: absolute;
+  border-radius: 10px;
+  border:1px solid #fff;
+  width: 6rem;
+  height: 1.8667rem;
+  line-height:2.133rem;
+  top:50%;
+  transform: translate(0,-50%);
+
+   
+}
+body{
+   background-color: black;
+}
+.daoyan img{
+  display: block;
+  width: 100%;
+   height: 22.6667rem;
+}
+.daoyan span{
+  font-size: 2.4rem;
+  position: absolute;
+  left: 50%;
+  top:40%;
+    transform:translate(-50%,-80%) ;
+  /* background:linear-gradient(to right,#FF9901,#007AFF); */
+  /* -webkit-background-clip: text; */
+  /* background-clip:text; */
+  /* color:transparent;  */
+  color:#fff;
+}
+.daoyan ul{
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 80%;
+  color: #fff;
+  font-size: 1.0667rem;
+  width: 100%;
+
+  
+}
+.daoyan ul li{
+  font-family: 'icomoon';
+  padding-bottom: .5333rem;
+ /* width:13rem; */
+ width: 50%;
+ float: left;
+text-align: center;
+
+}
+.jieshao{
+  width: 100%;
+  height: 14.4rem;
+  background-color: black;
+  position: relative;
+
+}
+.jieshao span{
+  display: block;
+  position: absolute;
+   top: 1.8667rem;
+   translate:-50% 0; 
+  left:50%;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.fangxiang{
+  display: flex;
+  justify-content:space-around;
+  padding-top: 7.7333rem ;
+}
+.fangxiang div{
+  font-size: 1.3333rem;
+  color:#fff;
+width: 100%;
+  height: 2.6667rem;
+  text-align: center;
+}
+.xiangqing{
+  margin-top: 5.3333rem;
+}
+.xiangqing .s{
+  padding-left: 1.6rem;
+  margin-top: .5333rem;
+  position: relative;
+    width: 100%;
+    height: 14rem;
+      background-color: black;
+}
+.xiangqing .s svg{
+  display: inline-block;
+  /* translate: -50% 0; */
+    left: 50%;
+  height: 1.3333rem;
+  line-height: 1.3333rem;
+}
+.xiangqing .s .name{
+  /* color: #fff; */
+  color: #5ca671;
+  /* margin-left: .5333rem; */
+  display: inline;
+  font-size: 1.2rem;
+}
+
+.xiangqing .s span{
+  /* color: #666666; */
+  color: #fff;
+  position: absolute;
+  display: block;
+  width:100%;
+  top: 1.8667rem;
+  font-size: 1.2rem;
+  padding: 1.0667rem 1.6rem  .5333rem 1.6rem;
+}
+
+.jx{
+  display: block;
+  color: #fff;
+}
+.jx li{
+  margin-top: .4rem;
+  list-style:disc;
+  margin-left: 1.6rem;
+  font-size: 1.0667rem;
+}
+
